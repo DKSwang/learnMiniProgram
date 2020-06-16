@@ -1,3 +1,6 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
 <button size='mini'>按钮</button>
+
+
+<text class="title">这是知识点1</text>
