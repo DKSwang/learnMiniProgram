@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
-<text class="title">我是home页面</text>
-<button size='mini'>按钮</button>
+<!-- 本地图片 -->
+<image src="/assets/img936.jpg"></image>
+<!-- 网络图片 -->
+<image src="http://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+<!-- 选个图片 -->
+<button bindtap="getUrl">获取图片地址</button>
+<image src="{{pUrl}}"></image>
+<!-- 今天图片何时加载完成  bindload   懒加载  lazy-load-->
+<!-- <image wx:for="{{10}}"  lazy-load src="http://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="pic"></image> -->
+<!-- 长按图片出现识别菜单 -->
+<image wx:for="{{1}}" show-menu-by-longpress  lazy-load src="http://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="pic"></image>
