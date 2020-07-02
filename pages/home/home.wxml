@@ -1,3 +1,14 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
 <button size='mini'>按钮</button>
+<!-- 手动获取用户信息 -->
+<button 
+size="mini" 
+open-type="getUserInfo" 
+bindgetuserinfo="getInfo"
+>获取用户信息</button>
+<!-- 获取的第三种方式--展示用户信息 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<!-- 显示全局数据 -->
+<view>{{newName}}</view>

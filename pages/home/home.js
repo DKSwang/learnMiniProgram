@@ -1,18 +1,28 @@
 // pages/home/home.js
+const app = getApp() //这就是获取App产生的实例对象
+console.log(app.globalData.name)
+console.log(app.globalData.age)
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    newName:''
 
+  },
+  getInfo(events){
+    console.log(events,"手动回去")
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      newName:app.globalData.name
+    })
+console.log(this.data.newName,"我谁家欧")
   },
 
   /**
