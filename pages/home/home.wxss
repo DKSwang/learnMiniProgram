@@ -1,4 +1,4 @@
-.title{
-  color:red;
-  font-size: 30px;
+input{
+ border: 1px solid #ccc;
+ margin-top: 10px;
 }

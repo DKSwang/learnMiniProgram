@@ -1,3 +1,14 @@
 <!--pages/home/home.wxml-->
-<text class="title">我是home页面</text>
-<button size='mini'>按钮</button>
+<input placeholder="亲输入">快快快</input>
+<!-- input绑定值 -->
+<input placeholder="亲输入" value="{{newVal}}">快快快</input>
+<!-- password -->
+<input password placeholder="请输入密码"></input>
+
+
+<!-- input 事件 -->
+<input
+ bindinput="getInputVal"
+ bindfocus="oneHandler"
+ bindblur="twoHandler"
+ ></input>
