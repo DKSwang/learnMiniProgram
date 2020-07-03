@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
-<text class="title">我是home页面</text>
-<button size='mini'>按钮</button>
+
+
+<!-- 水平滚动 scroll-x -->
+
+<scroll-view class="contain" scroll-x>
+<view wx:for="{{10}}" class="items" wx:key="*this">{{item}}</view>
+</scroll-view>
+<!-- 垂直滚动 scroll-y -->
+<scroll-view class="contain2" scroll-y bindscroll="scrollPlace">
+<view wx:for="{{10}}" class="items2" wx:key="*this">{{item}}</view>
+</scroll-view>
