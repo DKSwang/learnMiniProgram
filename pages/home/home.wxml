@@ -1,3 +1,26 @@
 <!--pages/home/home.wxml-->
+<!-- 简单模板语法的定义和调用 -->
+
+<!-- <template name="one">
 <text class="title">我是home页面</text>
 <button size='mini'>按钮</button>
+</template>
+<template is="one"></template>
+<template is="one"></template> -->
+
+<!-- 使用变量定义且传参 -->
+<!-- <template name="one">
+<text class="title">{{newTitle}}</text>
+<button size='mini'>{{btnText}}</button>
+</template>
+<template is="one" data="{{newTitle:one,btnText:two}}"></template> -->
+
+
+<!-- 引入外部定义好的模板 -->
+<!-- 相对路劲的引入 -->
+<!-- <import src="./componens/myTemplate.wxml"/> -->
+<!-- 绝对路劲的引入 -->
+<import src="/pages/home/componens/myTemplate.wxml"/>
+<!-- include可以用类引入除了 <template/> <wxs/> 外的整个代码引入，相当于是拷贝到 include 位置 -->
+<include src="./componens/myView.wxml"/>
+<template is="one" data="{{newTitle:one,btnText:two}}"></template> 

@@ -1,0 +1,4 @@
+<template name="one">
+<text class="title">{{newTitle}}</text>
+<button size='mini'>{{btnText}}</button>
+</template>
