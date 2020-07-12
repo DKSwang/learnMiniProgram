@@ -1,3 +1,19 @@
 <!--pages/home/home.wxml-->
-<text class="title">我是home页面</text>
-<button size='mini'>按钮</button>
+<!-- 
+  什么是WXS
+  WXS 代码可以编写在 wxml 文件中的 <wxs> 标签内，或以 .wxs 为后缀名的文件内。
+  每一个 .wxs 文件和 <wxs> 标签都是一个单独的模块。
+   -->
+   <!-- 页面内不使用,一般不会在.wxml文件里写wxs,会单独写出来 -->
+   <!-- <wxs module="info">
+  //写js代码
+   var message = "hello world";
+   module.exports = {
+     message:message
+   }
+   </wxs>
+   <view>{{info.message}}</view> -->
+   <!-- 下面我们来看看外部代码的引入和使用,且它的路劲必须使用相对路劲,不能使用绝对路径 -->
+   <wxs src="./wxs/mywxs.wxs" module="info"/>
+    <view>{{info.message}}</view>
+    <view>{{info.sum(10,20)}}</view>

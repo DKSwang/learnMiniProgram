@@ -1,0 +1,11 @@
+//home/wxs/mywxs.wxs
+//写js代码
+ var message = "hello world";
+ function sum  (num1,num2) {
+   return  num1+num2;
+   
+ };
+ module.exports = {
+   message:message,
+   sum:sum
+ }
