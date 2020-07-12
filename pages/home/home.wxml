@@ -1,3 +1,7 @@
 <!--pages/home/home.wxml-->
-<text class="title">我是home页面</text>
-<button size='mini'>按钮</button>
+<!-- 使用默认的item和默认的index -->
+<view wx:for="{{movies}}" wx:key="index">{{item}} --{{index}}</view>
+<!-- 若不像使用item,换成movie  ,-->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:key="index">{{movie}}</view>
+<!-- 不想使用默认的index,想换成i -->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i" wx:key="index">{{movie}}--{{i}}</view>
