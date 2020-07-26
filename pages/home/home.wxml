@@ -1,3 +1,15 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
 <button size='mini'>按钮</button>
+<view class='container'>
+<block wx:for="{{title}}" wx:key='index' >
+<view class="item" bindtap="itemHandler" data-index="{{index}}" data-items="{{item}}">{{item}}</view>
+</block>
+</view>
+<!-- 事件冒泡和事件捕获 -->
+<!-- 层层传递使用 capture-bind:tap,组织冒泡使用capture-catch:ta-->
+<view class="view1" capture-bind:tap="viewCapture1" bindtap="clickView1">
+<view class="view2" capture-bind:tap="viewCapture2" catchtap="clickView2">
+<view class="view3" capture-bind:tap="viewCapture3" bindtap="clickView3"></view>
+</view>
+</view>
