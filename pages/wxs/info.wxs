@@ -1,0 +1,7 @@
+function num(price,num2){
+var num3 = num2|| 2;
+  return price.toFixed(num3)
+}
+module.exports ={
+  num:num
+}

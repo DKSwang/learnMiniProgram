@@ -1,3 +1,15 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
-<button size='mini'>按钮</button>
+<button size='mini' bindtap="clickme">按钮</button>
+<view class="test" 
+bind:touchstart="start"
+bind:touchmove="move"
+bind:touchend="end"
+bind:tap="tap"
+bind:longpress="longpress"
+>测试事件</view>
+<!-- currentTarget和target的区别 -->
+<view class="outer" id="outer" bindtap="outHandler">
+外层
+<view class="inner" id="inner" bindtap="innerHandler">内层</view>
+</view>

@@ -2,5 +2,6 @@
   "pages": [
     "pages/home/home",
     "pages/adout/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap42.json"
 }
