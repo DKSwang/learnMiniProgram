@@ -1,0 +1,5 @@
+/* components/newTwo.wxss */
+.title{
+  font-weight: 700;
+  color:green;
+}

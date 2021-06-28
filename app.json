@@ -2,5 +2,9 @@
   "pages": [
     "pages/home/home",
     "pages/adout/about"
-  ]
+  ],
+  "usingComponents": {
+    "my-cpn": "/components/newOne/newOne"
+  },
+  "sitemapLocation": "sitemap7.json"
 }
