@@ -3,6 +3,12 @@
 <!-- <button size='mini'>按钮</button> -->
 
 <!-- 自定义组件 -->
-<my-prop  title="我手机第一个标题" content = "我是来自home页面的参数-1" titleclass="red"></my-prop>
+<!-- <my-prop  title="我手机第一个标题" content = "我是来自home页面的参数-1" titleclass="red"></my-prop>
 <my-prop title="我手机第二个标题" content = "我是来自home页面的参数-2" titleclass="green"></my-prop>
-<my-prop title="我手机第三个标题" content = "我是来自home页面的参数-3" titleclass="yellow"></my-prop>
+<my-prop title="我手机第三个标题" content = "我是来自home页面的参数-3" titleclass="yellow"></my-prop> -->
+
+
+
+<!-- 自定义组件 -->
+<view>父组件-当前计数:{{count}}</view>
+<my-event bind:transvent = "changeData"></my-event>

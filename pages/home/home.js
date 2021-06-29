@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
+    count:0
 
+  },
+  changeData(data){
+    console.log(data,"参数",data.detail.params)
+    this.setData({
+      count:this.data.count+1
+    })
+    this.count+=1
   },
 
   /**
