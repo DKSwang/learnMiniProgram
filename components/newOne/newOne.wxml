@@ -1,5 +1,0 @@
-<!--components/newOne.wxml-->
-<!-- <text>components/newOne.wxml</text> -->
-<view class="title">{{title}}</view>
-<view>{{content}}</view>
-<new-two/>

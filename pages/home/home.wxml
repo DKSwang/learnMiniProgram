@@ -1,4 +1,8 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
 <!-- <button size='mini'>按钮</button> -->
-<my-cpn></my-cpn>
+
+<!-- 自定义组件 -->
+<my-prop  title="我手机第一个标题" content = "我是来自home页面的参数-1" titleclass="red"></my-prop>
+<my-prop title="我手机第二个标题" content = "我是来自home页面的参数-2" titleclass="green"></my-prop>
+<my-prop title="我手机第三个标题" content = "我是来自home页面的参数-3" titleclass="yellow"></my-prop>

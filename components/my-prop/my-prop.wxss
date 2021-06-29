@@ -1,0 +1,4 @@
+/* components/my-prop/my-prop.wxss */
+.title{
+  color:blue
+}
