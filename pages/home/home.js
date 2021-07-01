@@ -5,21 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    count:0,
-    titleList:["流行","新款","精选"]
+   
 
   },
-  changeData(data){
-    console.log(data,"参数",data.detail.params)
-    this.setData({
-      count:this.data.count+1
-    })
-    this.count+=1
-  },
-  getData(params){
-    console.log(params,"params")
-  },
+  
+  changeNum(){
+    //获取组件对象
+    let change_num = this.selectAllComponents(".comIn")
+    console.log (change_num,"change_num")
+    //修改自定义组件中的num变量-可以实现但是不推荐,推荐使用组件内部暴露的方法进行修改
+    // change_num[0].setData({
+    //   num:change_num[0].data.num+10
+    // })
 
+
+    //通内部暴露方法进行修改
+    change_num[0].myNum(5)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

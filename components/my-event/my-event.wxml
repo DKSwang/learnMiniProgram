@@ -1,3 +1,0 @@
-<!--components/my-event/my-event.wxml-->
-<text>自定义事件传递数据</text>
-<button size="mieddle" bindtap="clickme">+1</button>

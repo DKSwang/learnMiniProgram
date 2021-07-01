@@ -1,7 +1,6 @@
 {
   "usingComponents": {
-    "my-prop":"/components/my-prop/my-prop",
-    "my-event":"/components/my-event/my-event",
-    "tab-control":"/components/w-tab-control/w-tab-control"
+    "changeInside":"/components/changeInside/changeInside"
+    
   }
 }

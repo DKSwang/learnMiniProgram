@@ -1,4 +1,4 @@
-// components/my-event/my-event.js
+// components/changeInside/changeInside.js
 Component({
   /**
    * 组件的属性列表
@@ -11,19 +11,19 @@ Component({
    * 组件的初始数据
    */
   data: {
+    num:0
 
   },
- 
 
   /**
    * 组件的方法列表
    */
   methods: {
-     //点击事件
-  clickme(event){
-    console.log(event)
-    this.triggerEvent("transvent",{params:'我数参数'},{})
-  },
+    myNum(params){
+      this.setData({
+        num:this.data.num+params
+      })
+    }
 
   }
 })
