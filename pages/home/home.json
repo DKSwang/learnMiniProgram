@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "changeInside":"/components/changeInside/changeInside"
+  "my-slot":"/components/my-slot/my-slot",
+  "mslot":"/components/mslot/mslot"
     
   }
 }

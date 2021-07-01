@@ -1,2 +1,0 @@
-<!--components/changeInside/changeInside.wxml-->
-<view>我是内部组件的数字:{{num}}</view>

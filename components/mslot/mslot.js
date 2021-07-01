@@ -1,5 +1,8 @@
-// components/changeInside/changeInside.js
+// components/mslot/mslot.js
 Component({
+  options:{
+    multipleSlots:true 
+  },
   /**
    * 组件的属性列表
    */
@@ -11,7 +14,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    num:0
 
   },
 
@@ -19,11 +21,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    myNum(params){
-      this.setData({
-        num:this.data.num+params
-      })
-    }
 
   }
 })
