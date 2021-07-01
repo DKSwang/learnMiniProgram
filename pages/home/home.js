@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    count:0
+    count:0,
+    titleList:["流行","新款","精选"]
 
   },
   changeData(data){
@@ -14,6 +15,9 @@ Page({
       count:this.data.count+1
     })
     this.count+=1
+  },
+  getData(params){
+    console.log(params,"params")
   },
 
   /**

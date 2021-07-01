@@ -2,7 +2,7 @@
   color:red;
   font-size: 30px;
 }
-.red{
+.redColor{
   color: red;
 }
 .green{
