@@ -15,10 +15,11 @@
 <!-- 
 多个插槽的注意事项:
 1:使用多个插槽时,每一个都有自己的名字
-2.设置组件的就是文件里添加options,增加属性multipleSlots:true
+2.必须设置组件的就是文件里添加options,增加属性multipleSlots:true
 3.插槽可以是各种便签的内容
  -->
-<view style="color:red">多个插槽</view>
+ <button size="small" bindtap="showPage">切换显示</button>
+<view style="color:red" wx:if="{{isShow}}">多个插槽</view>
 <mslot>
 <view slot="slotOne">我是第一个插槽的内容</view>
 <view slot="slotTwo">我是第二个插槽的内容</view>

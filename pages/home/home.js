@@ -5,8 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isShow:true
    
 
+  },
+  //切换显示
+  showPage(){
+    this.setData({
+      isShow:!this.data.isShow
+    })
   },
   
   changeNum(){
