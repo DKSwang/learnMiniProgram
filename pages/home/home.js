@@ -60,7 +60,13 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function (options) {
+    console.log(options)
+    return {
+      title: '我的转发',
+      path:"/pages/adout/about",//点击分享进入的页面
+      imageUrl: '../../img/background.png' // 图片 URL可以是本地也可以是网图
+    }
 
   }
 })
