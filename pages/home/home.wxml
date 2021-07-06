@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
-<button size='mini'>按钮</button>
+<button size='mini' >哈哈哈</button>
+<!-- 展示弹框 -->
+<button size='mini' bindtap="showToast">点我展示弹框</button>
+<!-- 展示modal -->
+<button size='mini' bindtap="showmodal">点我展示弹窗</button>
+<!-- 展示选项 -->
+<button size='mini' bindtap="showChoose">点我展示选项</button>
+<!-- 展示loading  -->
+<button size='mini' bindtap="showLoading">点我展示loading</button>
