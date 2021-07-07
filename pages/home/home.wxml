@@ -1,3 +1,19 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
 <button size='mini'>按钮</button>
+
+
+
+<!-- navigator页面跳转-默认左上角有返回箭头 -->
+<navigator url="/pages/detail/detail">查看详情</navigator>
+
+<!-- 使用取值为redirect-重定向 -->
+<navigator url="/pages/detail/detail" open-type="redirect">查看详情-重定向</navigator>
+
+
+<!-- 使用取值为switchTab-新的tab页面  -->
+<navigator url="/pages/adout/about" open-type="switchTab">去关于-tabBar</navigator>
+
+
+<!-- 使用取值为relaunch-挂不必所有页面就剩一个页面  -->
+<navigator url="/pages/detail/detail" open-type="reLaunch">去detail</navigator>

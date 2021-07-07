@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<text>我是详情页面</text>
+
+<navigator open-type="navigateBack">返回</navigator>
+
+
+<navigator url="/pages/comment/comment">去评页面</navigator>
