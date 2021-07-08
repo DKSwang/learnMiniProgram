@@ -1,4 +1,4 @@
-// pages/adout/about.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -12,6 +12,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //打印options,获取传递的参数
+    console.log(options,"参数")
 
   },
 
@@ -40,6 +42,16 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    //返回是给页面传递参数-首先获取首页的页面页面对象
+    // getCurrentPages().获取当前栈中所有页面
+    const pages  = getCurrentPages()
+    console.log(pages)
+    const home = pages[pages.length-2]
+    //调用页面的setData
+    home.setData({
+      title:"哈哈哈哈哈"
+    })
+    
 
   },
 

@@ -1,3 +1,14 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
 <button size='mini'>按钮</button>
+
+<!--页面跳转且传递参数-参数是死的 -->
+<navigator url="/pages/detail/detail?name=张三&age=18&sex=男">去详情页-传递死参数</navigator>
+
+
+<!--页面跳转且传递参数-参数是活的  -->
+<navigator url="/pages/detail/detail?name={{name}}&age={{age}}&sex={{sex}}">去详情页-传递活参数</navigator>
+
+
+<!-- 从详情页返回-给首页产地参数 -->
+<view>{{title}}</view>

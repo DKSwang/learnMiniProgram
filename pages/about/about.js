@@ -1,14 +1,10 @@
-// pages/home/home.js
+// pages/about/about.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name:'李四',
-    age:20,
-    sex:'男',
-    title:'好借好还和'
 
   },
 
