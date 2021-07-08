@@ -1,3 +1,6 @@
 <!--pages/home/home.wxml-->
 <text class="title">我是home页面</text>
 <button size='mini'>按钮</button>
+
+<!-- 点击按钮跳转页面 -->
+<button size="mini" bindtap="toDetail">去详情页</button>

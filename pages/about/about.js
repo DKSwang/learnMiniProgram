@@ -1,27 +1,10 @@
-// pages/home/home.js
+// pages/about/about.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name:9999
-
-  },
-  toDetail(){
-    // console.log("急急急")
-    //正常跳-参数是活的
-    // wx.navigateTo({
-    //   url: `/pages/detail/detail?title=${this.data.name}`,
-    // })
-    //传递参数是死的
-    wx.navigateTo({
-      url: "/pages/detail/detail?title=张三",
-    })
-    //重定向跳-每一个跳转页面的都有有个对应的APi
-    // wx.redirectTo({
-    //   url: 'url',
-    // })
 
   },
 

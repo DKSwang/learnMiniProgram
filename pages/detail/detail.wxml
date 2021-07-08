@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+
+<!-- 点击按钮返回 -->
+<button size="mini" bindtap="toHome">返回首页</button>
