@@ -1,17 +1,32 @@
 // pages/home/home.js
+import {getMultiData} from "../../service/home"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    bannerList:[],
+    recommendList:[]
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //请求轮播图数据和推荐数据
+    getMultiData().then(res =>{
+      const banner = res.data.data.banner.list
+      const comment = res.data.data.recommend.list
+      this.setData({
+        bannerList:banner,
+        recommendList:comment
+      })
+    })
+    .catch(err =>{
+      console.log(err)
+    })
+
 
   },
 
