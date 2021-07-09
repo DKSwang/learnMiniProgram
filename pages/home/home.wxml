@@ -1,4 +1,7 @@
 <!--pages/home/home.wxml-->
 
 <!-- 展示轮播图 -->
-      <w-swiper list="{{bannerList}}"></w-swiper>
+<w-swiper list="{{bannerList}}"></w-swiper>
+
+<!-- 推荐数据展示 -->
+<w-recommend list ="{{recommendList}}"></w-recommend>

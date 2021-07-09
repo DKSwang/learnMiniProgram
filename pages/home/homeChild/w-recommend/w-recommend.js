@@ -1,4 +1,4 @@
-// components/w-swiper/w-swiper.js
+// pages/home/homeChild/w-recommend/w-recommend.js
 Component({
   /**
    * 组件的属性列表
@@ -8,7 +8,7 @@ Component({
       type:Array,
       value:[],
       observer:function(newVal,oldVal){
-       // console.log(newVal,oldVal,"999")
+       // console.log (newVal,oldVal)
       }
     }
 

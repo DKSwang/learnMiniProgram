@@ -1,0 +1,22 @@
+/* pages/home/homeChild/w-recommend/w-recommend.wxss */
+.recommend{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 16rpx solid #eee;
+}
+.recommend-item{
+ border-radius: 50%;
+ text-align: center;
+}
+.recommend-title{
+  margin-top: 10rpx;
+  font-size: 12px;
+}
+.recommend-img{
+  width: 100%;
+  height: 200rpx;
+  color: #555;
+}
