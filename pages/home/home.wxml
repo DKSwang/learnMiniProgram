@@ -8,3 +8,5 @@
 
 <!-- 本周流行 -->
 <w-fashion list ="{{recommendList}}"></w-fashion>
+<!-- tab展示 -->
+<w-tabControl bind:clickTab="clickTab" list="{{tabList}}"></w-tabControl>

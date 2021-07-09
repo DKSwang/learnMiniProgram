@@ -7,8 +7,16 @@ Page({
    */
   data: {
     bannerList:[],
-    recommendList:[]
+    recommendList:[],
+    tabList:["流行","新款","精选"],
+    tabIndex:''
 
+  },
+  clickTab(params){
+    console.log(params,"00")
+    this.setData({
+      tabIndex:params.detail.index
+    })
   },
   /**
    * 生命周期函数--监听页面加载

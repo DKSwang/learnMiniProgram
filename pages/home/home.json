@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "w-swiper":"/components/w-swiper/w-swiper",
+    "w-tabControl":"/components/w-tabControl/w-tabControl",
     "w-recommend":"./homeChild/w-recommend/w-recommend",
     "w-fashion":"./homeChild/w-fashion/w-fashion"
   },
