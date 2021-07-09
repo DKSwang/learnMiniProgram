@@ -5,3 +5,6 @@
 
 <!-- 推荐数据展示 -->
 <w-recommend list ="{{recommendList}}"></w-recommend>
+
+<!-- 本周流行 -->
+<w-fashion list ="{{recommendList}}"></w-fashion>

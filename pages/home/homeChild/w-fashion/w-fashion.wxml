@@ -1,0 +1,10 @@
+
+<view class="week-title">本周流行</view>
+<view class="recommend">
+<block  wx:for="{{newList}}" wx:key="index" >
+<view class="recommend-item" >
+<image class="recommend-img" src="{{item.image}}" alt="" mode="widthFix"/>
+<view class="recommend-title">{{item.title}}</view>
+</view>
+</block>
+</view>

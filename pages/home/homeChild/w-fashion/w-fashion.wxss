@@ -1,0 +1,29 @@
+/* pages/home/homeChild/w-fashion/w-fashion.wxss */
+.recommend{
+  height: 100%;
+  display: flex;
+  margin-top: 40rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 16rpx solid #eee;
+  flex-wrap: wrap;
+}
+.recommend-item{
+  width: 25%;
+ border-radius: 50%;
+ text-align: center;
+ margin-bottom:10rpx;
+}
+.recommend-title{
+  margin-top: 10rpx;
+  font-size: 12px;
+}
+.recommend-img{
+  width: 100rpx;
+  height: 800rpx;
+  color: #555;
+}
+.week-title{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
