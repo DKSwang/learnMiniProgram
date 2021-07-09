@@ -10,3 +10,8 @@
 <w-fashion list ="{{recommendList}}"></w-fashion>
 <!-- tab展示 -->
 <w-tabControl bind:clickTab="clickTab" list="{{tabList}}"></w-tabControl>
+<!-- 商品展示 -->
+<view>
+<block wx:for="{{goods[currenttype].list}}">
+</block>
+</view>

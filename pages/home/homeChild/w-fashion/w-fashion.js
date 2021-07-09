@@ -17,7 +17,7 @@ Component({
         })
         final.push(...oldData)
          this.data.newList = final
-         console.log(this.data.newList)
+       //  console.log(this.data.newList)
       }
     }
 
