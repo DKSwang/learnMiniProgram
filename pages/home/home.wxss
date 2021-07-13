@@ -2,13 +2,4 @@
   color:red;
   font-size: 30px;
 }
-.show-goods{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;  
-}
-.items{
-  width: 48%;
-  position: relative;
-}
+

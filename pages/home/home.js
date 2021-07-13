@@ -69,7 +69,7 @@ Page({
       //假数据赋值
       let list = []
       if(type=='pop'){
-        console.log("pop")
+        //console.log("pop")
        list = [
           {
             title:'pop数据1',
@@ -95,8 +95,52 @@ Page({
           }
         ]
       }else if(type=='new'){
-        console.log("new")
+        //console.log("new")
         list = [
+          {
+            title:'new数据1',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2001,
+            collect:201
+          },
+          {
+            title:'new数据2',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2002,
+            collect:202
+          },{
+            title:'new数据3',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2003,
+            collect:203
+          },{
+            title:'new数据4',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2004,
+            collect:204
+          },
+          {
+            title:'new数据1',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2001,
+            collect:201
+          },
+          {
+            title:'new数据2',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2002,
+            collect:202
+          },{
+            title:'new数据3',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2003,
+            collect:203
+          },{
+            title:'new数据4',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2004,
+            collect:204
+          },
           {
             title:'new数据1',
             img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
@@ -121,7 +165,7 @@ Page({
           }
         ]
       }else{
-        console.log("sell")
+       // console.log("sell")
         list = [
           {
             title:'sell数据1',
@@ -225,7 +269,9 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.log("已经滚动到蝶客")
+    //上下加载更多数据
+    this.getProductData(this.data.currentType)
   },
 
   /**

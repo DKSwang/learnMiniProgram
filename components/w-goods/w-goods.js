@@ -1,14 +1,14 @@
-// components/w-goods-item/w-goods-item.js
+// components/w-goods/w-goosd.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    item:{
-      type:Object,
-      value:{},
+    goods:{
+      type:Array,
+      value:[],
       observer:function(newVal,oldVal){
-       // console.log(newVal,oldVal,"0000000")
+       // console.log(newVal)
       }
     }
 
