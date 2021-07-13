@@ -2,6 +2,6 @@
 .swiper-item{
   background-color: aquamarine;
 }
-.swiper-item image{
+.swiper-img{
   width: 100%;
 }

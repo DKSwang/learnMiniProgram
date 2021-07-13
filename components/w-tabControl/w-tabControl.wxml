@@ -1,6 +1,6 @@
 <!--components/w-tabControl/w-tabConreol.wxml-->
 <view class="tab">
 <block wx:for="{{list}}" wx:key="index">
-<view bindtap="changeColor" data-index="{{index}}" class="{{currentIndex==index?'active':''}}">{{item}}</view>
+<view class="tab-item" bindtap="changeColor" data-index="{{index}}" class="{{currentIndex==index?'active':''}}">{{item}}</view>
 </block>
 </view>

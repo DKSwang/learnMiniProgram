@@ -1,0 +1,46 @@
+/* components/w-goods-item/w-goods-item.wxss */
+.goods-item{
+  text-align: center;
+  color: #333;
+  padding-bottom:85rpx;
+  margin-top: 20rpx;
+}
+.goods-img{
+  width: 100%;
+}
+.text-item{
+  position:absolute;
+  left:0;
+  right: 0;
+ bottom:-9px
+}
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
+}
+.price{
+  color: #ff5777;
+}
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0 6rpx 0 10rpx;
+  position: absolute;
+  top:66rpx;
+}
+.collect{
+  position: relative;
+  left:23px
+}
+ /* 在wxss中不能使用本地图片,只能使用网络图片 */
+/* .collect::before{
+  content: "";
+  position: absolute;
+  left :-15px;
+  top :-1px;
+  width :14px;
+  height: 14px;
+ 
+  background: url("/assets/images/common/favor.png") 0 0/14px 14px;
+} */

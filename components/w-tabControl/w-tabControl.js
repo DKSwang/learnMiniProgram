@@ -8,7 +8,7 @@ Component({
       type:Array,
       value:[],
       observer:function(newVal,oldVal){
-        console.log(newVal,oldVal)
+       // console.log(newVal,oldVal)
       }
     }
 

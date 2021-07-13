@@ -4,9 +4,9 @@
   justify-content: space-around;
  
 }
-.tab> view{
+.tab-item{
  
-  widows: 88rpx;
+  width: 88rpx;
   height: 60rpx;
   
 }

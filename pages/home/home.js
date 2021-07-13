@@ -54,18 +54,109 @@ Page({
     //处理页码
     const pages = this.data.goods[type].page+1
     getProduct(type,pages).then(res =>{
-      console.log(res,type)
+     // console.log(res,type)
       //取出数据
-      const list = res.data.data.list
-      //近数据处理
-      const oldList = this.data.goods[type].list
+      //  const list = res.data.data.list
+      // //近数据处理
+      // const oldList = this.data.goods[type].list
+      // oldList .push(...list)
+      // const typeKey = `goods.${type}.list` //处理list的Key
+      // const pageKey = `goods.${type}.page`
+      // this.setData({
+      //   [typeKey]:oldList,  //新的赋值方式
+      //   [pageKey]:page
+      // })
+      //假数据赋值
+      let list = []
+      if(type=='pop'){
+        console.log("pop")
+       list = [
+          {
+            title:'pop数据1',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:1001,
+            collect:801
+          },
+          {
+            title:'pop数据2',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:1002,
+            collect:802
+          },{
+            title:'pop数据3',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:1003,
+            collect:803
+          },{
+            title:'pop数据4',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:1004,
+            collect:804
+          }
+        ]
+      }else if(type=='new'){
+        console.log("new")
+        list = [
+          {
+            title:'new数据1',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2001,
+            collect:201
+          },
+          {
+            title:'new数据2',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2002,
+            collect:202
+          },{
+            title:'new数据3',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2003,
+            collect:203
+          },{
+            title:'new数据4',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:2004,
+            collect:204
+          }
+        ]
+      }else{
+        console.log("sell")
+        list = [
+          {
+            title:'sell数据1',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:3001,
+            collect:301
+          },
+          {
+            title:'sell数据2',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:3002,
+            collect:302
+          },{
+            title:'sell数据3',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:3003,
+            collect:303
+          },{
+            title:'sell数据4',
+            img:'https://s10.mogucdn.com/mlcdn/c45406/180913_036dli57aah85cb82l1jj722g887g_225x225.png',
+            price:3004,
+            collect:304 
+          }
+        ]
+      }
+      //console.log(this.data.goods[this.data.currentType].list,"9090")
+      let oldList = []
       oldList .push(...list)
       const typeKey = `goods.${type}.list` //处理list的Key
       const pageKey = `goods.${type}.page`
       this.setData({
         [typeKey]:oldList,  //新的赋值方式
-        [pageKey]:page
+        [pageKey]:pages
       })
+      
       
     })
     .catch(err =>{
