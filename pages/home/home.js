@@ -1,5 +1,7 @@
 // pages/home/home.js
 import {getMultiData,getProduct} from "../../service/home"
+ //规定一个滚动距离
+ const TOPDISTANCE = "30"
 Page({
 
   /**
@@ -16,7 +18,8 @@ Page({
       new:{page:0,list:[]},
       sell:{page:0,list:[]}
     },
-    currentType :"pop" //默认是流行 
+    currentType :"pop", //默认是流行 
+    showTop:false
 
   },
   clickTab(params){
@@ -279,5 +282,20 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  /**
+   * 监听页面滚动
+   */
+  onPageScroll(option){
+   // console.log(option)
+    const scrollTop = option.scrollTop
+    // 官方建议不要在滚动回电函数中频繁的条用setData
+    const flag = scrollTop>=TOPDISTANCE
+    if (flag !=this.data.showTop){
+      this.setData({
+        showTop:flag
+      })
+    }
+    
   }
 })

@@ -12,3 +12,5 @@
 <w-tabControl bind:clickTab="clickTab" list="{{tabList}}"></w-tabControl>
 <!-- 商品展示 -->
 <w-goods goods ="{{goods[currentType].list}}"></w-goods>
+<!-- 回到顶部 -->
+<w-back-top wx:if="{{showTop}}"> </w-back-top>
