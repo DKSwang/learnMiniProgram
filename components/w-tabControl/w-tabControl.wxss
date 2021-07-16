@@ -2,7 +2,8 @@
 .tab{
   display: flex;
   justify-content: space-around;
- 
+ background-color: #fff;
+ padding-bottom: 10rpx;
 }
 .tab-item{
  

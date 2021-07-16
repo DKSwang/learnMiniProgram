@@ -4,12 +4,14 @@
 <w-swiper list="{{bannerList}}"></w-swiper>
 
 <!-- 推荐数据展示 -->
-<w-recommend list ="{{recommendList}}"></w-recommend>
+<w-recommend list ="{{recommendList}}" bind:imageLoad="imageLoad"></w-recommend>
 
 <!-- 本周流行 -->
 <w-fashion list ="{{recommendList}}"></w-fashion>
 <!-- tab展示 -->
-<w-tabControl bind:clickTab="clickTab" list="{{tabList}}"></w-tabControl>
+<w-tabControl bind:clickTab="clickTab" list="{{tabList}}" id="saveBar" class="{{saveBar?'saveBar':''}}"></w-tabControl>
+<!-- 在实现停留时使用 -->
+<w-tabControl bind:clickTab="clickTab" list="{{tabList}}" wx:if="{{saveBar}}"></w-tabControl>
 <!-- 商品展示 -->
 <w-goods goods ="{{goods[currentType].list}}"></w-goods>
 <!-- 回到顶部 -->

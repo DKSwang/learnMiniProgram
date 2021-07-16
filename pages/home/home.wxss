@@ -2,4 +2,11 @@
   color:red;
   font-size: 30px;
 }
-
+/* 实现bar停留 */
+.saveBar{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1;
+}

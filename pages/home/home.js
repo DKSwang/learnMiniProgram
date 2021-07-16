@@ -19,7 +19,9 @@ Page({
       sell:{page:0,list:[]}
     },
     currentType :"pop", //默认是流行 
-    showTop:false
+    showTop:false,//回到顶部展示
+    saveBar:false,//Bar停留
+    tabScrollTop:0 ,//记录tab滚动高度
 
   },
   clickTab(params){
@@ -244,13 +246,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+   
+    
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
+    
 
   },
 
@@ -296,6 +300,30 @@ Page({
         showTop:flag
       })
     }
-    
+    //修改展示tab的属性
+    const flag1 = scrollTop>=this.data.tabScrollTop
+    if (flag1 !=this.data.saveBar){
+      this.setData({
+        saveBar:flag1
+      })
+    }
+  },
+  //
+  imageLoad(){
+    console.log("图片加载完成")
+     /**
+     * 获取某一元素距离顶部的距离
+     * 注意:页面加载完成就会执行该函数,但是图片是异步加载,所以此处获取的高度是有问题的
+     * 所以要等图片加载完成,这样获取的高度才是真正的高度
+     * 有一个笨办法,但是很不推荐
+     *setTimeout(() =>{
+      wx.createSelectorQuery().select("#saveBar").boundingClientRect(rect =>{
+        console.log (rect,"00")
+      }).exec()
+    },1000)
+     */
+    wx.createSelectorQuery().select("#saveBar").boundingClientRect(rect =>{
+      this.data.tabScrollTop = rect.top
+    }).exec()
   }
 })
